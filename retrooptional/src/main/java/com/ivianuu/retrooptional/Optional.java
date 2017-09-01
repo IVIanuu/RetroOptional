@@ -3,7 +3,7 @@ package com.ivianuu.retrooptional;
 import java.util.NoSuchElementException;
 
 /**
- * @author Manuel Wrage (IVIanuu)
+ * Optional
  */
 public final class Optional<T> {
     /**
