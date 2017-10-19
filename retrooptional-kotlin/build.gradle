@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
 apply plugin: 'com.github.dcendents.android-maven'
 
 group='com.github.ivianuu'
@@ -19,8 +20,11 @@ android {
 }
 
 dependencies {
-    // Annotations
-    api rootProject.ext.supportAnnotations
+    // Kotlin
+    implementation rootProject.ext.kotlinStdlib
+
+    // RetroOptional
+    api project(':retrooptional')
 }
 
 // build a jar with source files
