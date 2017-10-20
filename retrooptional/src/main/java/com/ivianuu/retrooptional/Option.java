@@ -51,7 +51,7 @@ public final class Option<T> {
      * Returns a maybe present option
      */
     @NonNull public static <T> Option<T> ofNullable(@Nullable T value) {
-        if (value == null) {
+        if (value != null) {
             return of(value);
         } else {
             return absent();

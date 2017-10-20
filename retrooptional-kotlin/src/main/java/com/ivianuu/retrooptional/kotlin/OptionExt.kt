@@ -36,4 +36,9 @@ fun <T> absent() = Option.absent<T>()
 /**
  * Returns this value as a option
  */
-fun <T> T.toOption() = Option.ofNullable(this)
+fun <T> T.toOption() = Option.of(this)
+
+/**
+ * Returns this nullable value as a option
+ */
+fun <T> T?.toOptionNullable() = Option.ofNullable(this)
